@@ -20,7 +20,8 @@
         config.fileURL = [NSURL URLWithString:configPath];
         //设置realm管理的RLMObjects，管理了那么些表,多个数据库表可以分开管理
         config.objectClasses = @[NSClassFromString(@"RLMOrder"),
-                                 NSClassFromString(@"RLMProduct")];
+                                 NSClassFromString(@"RLMProduct"),
+                                 NSClassFromString(@"RLMMessage")];
         _config = config;
     }
     return _config;
